@@ -1,0 +1,204 @@
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Open-sans" , sans-serif;
+}
+
+
+.index > .menu{
+    background-color: #181818;
+    height: 55px;
+    opacity: 0.8;
+    z-index: 1;
+    width: 100%;
+    position : fixed;
+    top: 0;
+    left: 0;  
+}
+
+
+.menu-container{
+    display: flex;
+    flex-direction :row;
+    justify-content: space-around;  
+    color: #fff;
+    height : 22px ;
+    margin : 1.5% 5%;
+    font-size: 14px;
+    font-weight: bold;
+  
+}
+.menu-container > p{
+    padding: auto;
+    margin: auto;
+}
+.footer{
+    background-color: rgb(24 24 24);
+}
+.footer > .footer-container{
+    height: 272px;
+    opacity: 0.8;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    font-weight: normal;
+    font-size: 12px;  
+    background :no-repeat url('./assets/darthvader_2x.jpg');
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+}
+
+.footer li {
+    margin: 10px 0 10px 0;
+
+}
+.footer li a{
+    color:white;  
+    margin: 10% 0 10% 0;
+
+}
+.footer ul{
+    list-style:none
+    
+}
+
+.footer-container >.header{
+    color :white;
+    text-align:  center;
+
+}
+.footer-container > .content{
+    display:  flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    color : white; 
+}
+.cover-section{
+    background : no-repeat;
+    background-size: cover;
+    width: 100%;
+  
+}
+.section {
+    position: relative;
+}
+
+.content-section-1{
+    display: flex;
+    margin :10% 10% 10% 10%;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+
+.content-section-1 h2{
+    margin: 0;
+}
+
+.text-content-1{
+    width: 380px;
+}
+
+.text-content-2{
+    display: flex;
+    margin :10% 10% 10% 10%;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+
+.text-content-2 h1{
+    width: 100%;
+    text-align: center;
+}
+.text-content-2 img{
+   margin-top: 5%;
+}
+.wrap-text{
+    width:70%;
+    margin-left: auto;
+}
+
+
+#open-menu-button{
+    display :none;
+    margin: 10px 10px;
+    top: 0px;
+    right: 0;
+    position: absolute;
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(339deg) brightness(105%) contrast(101%);
+    z-index: 1
+}
+
+#close-menu-button{
+    margin: 10px 10px;
+    top: 0px;
+    left: 0;
+    position: absolute;
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(339deg) brightness(105%) contrast(101%);
+    z-index: 1
+}
+.index > #mobile-menu{
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    color: white;
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+}
+
+
+.advertising{
+    position: sticky;
+    top :300px;
+    height: 300px;
+    width: 100%;
+    background-color:tomato;
+    z-index: 1;
+    opacity: 0.8;
+    text-align: center;
+}
+.advertising  h3{
+    margin: 0;
+}
+
+
+.icons{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@media only screen and (max-width: 859px) {
+    .menu {
+      display: none;
+    }
+    #open-menu-button{
+        display: flex ;
+    }
+    .wrap-text{
+        width:100%;
+        
+    }
+    .footer-container >.header{
+        color :white;
+        text-align:  center;
+        display: none;
+    
+    }
+
+  }
+  
+
+
+
+
